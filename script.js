@@ -1,9 +1,13 @@
-const input = document.querySelector("form__input")
+const copy = async () => {
+  let text = document.querySelector("#password").value
+  await navigator.clipboard.writeText(text)
+  console.log("Copiado.")
+}
 
-const copy = () => {}
+document.getElementById("copy").addEventListener("click", copy)
 
 const generate = () => {
-  let characters =
+  const characters =
     "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()_+?{}[]"
   const passwordLength = 16
   let password = ""
@@ -13,5 +17,5 @@ const generate = () => {
     password += characters.substring(randomNumber, randomNumber + 1)
   }
   document.getElementById("password").value = password
-  console.log("Gerado!!")
+  console.log("Gerado.")
 }
