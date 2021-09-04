@@ -4,8 +4,6 @@ const copy = async () => {
   console.log("Copiado.")
 }
 
-document.getElementById("copy").addEventListener("click", copy)
-
 const generate = () => {
   const characters =
     "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()_+?{}[]"
@@ -19,3 +17,6 @@ const generate = () => {
   document.getElementById("password").value = password
   console.log("Gerado.")
 }
+
+document.getElementById("copy").addEventListener("click", copy)
+document.getElementById("generate").addEventListener("click", generate)
