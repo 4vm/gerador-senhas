@@ -1,5 +1,6 @@
 body {
   font-family: "Share Tech Mono", monospace;
+  background-color: #deedee;
 }
 
 .password-generator {
@@ -11,6 +12,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 4rem;
   padding: 2rem 2rem 2rem 2rem;
+  background-color: #ffffff;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
 }
 
@@ -26,6 +28,7 @@ p {
 .form {
   display: flex;
   align-items: center;
+  background-color: #ffffff;
   gap: 1rem;
   padding: 1rem;
   box-shadow: 0 0 8px rgb(0 0 0 / 15%);
